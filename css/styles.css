@@ -43,12 +43,21 @@
     --color-brand-dark: #465929;
     --color-address-data: #a18268;
 }
+
+* {
+    box-sizing: border-box;
+}
 body{
     color: var(--color-primary-dark);
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
 }
 
 ul {
@@ -60,6 +69,7 @@ address {
 }
 
 .button {
+    padding: 16px 32px;
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
     border: 2px solid var(--color-brand-light);
@@ -84,11 +94,38 @@ color: var(--color-brand-light);
 text-decoration:underline;
 font-weight: 600;
 }
+.section{
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.visualy-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*HERO SECTION  */
+
+.hero-section {
+padding: 272px 0;
+}
 
 .hero-title {
+margin-bottom: 0;
 color: var(--color-primary-light);
 text-align: center;
 font-size: 128px;
+font-weight: 900;
 
 }
 
@@ -116,6 +153,16 @@ font-size: 128px;
     color: var(--color-brand-dark);
 }
 
+/* TRADITION SECTION */
+
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+ 
 .traditions-descr .accent {
 color: var(--color-brand-light);
 }
@@ -125,28 +172,45 @@ color: var(--color-brand-light);
        font-weight: 600;
 }
 
-.contact-descr {
-    color: var(--color-brand-dark);
-}
+/* CHEF SECTION */
 
-.address-copyright{
-    color: var(--color-address-data);
-    font-size: 14px;
+.chefs-title {
+margin-bottom: 80px;
 }
-
 .chef-title {
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 
+/* FORMAT SECTION */
+
+.formats-title{
+    margin-bottom: 80px;
+}
 .format-title {
 font-size: 24;
     font-weight: 600;
+    margin-bottom: 80px;
 }
 
 .format-desrc {
     font-weight: 300;
         font-size: 14px;
+}
+
+/* CONTACT SECTION */
+
+.contact-title{
+    margin-bottom: 16px;
+}
+.contact-descr {
+    color: var(--color-brand-dark);
+}
+
+.address-copyright {
+    color: var(--color-address-data);
+    font-size: 14px;
 }
 
 .address-link {
